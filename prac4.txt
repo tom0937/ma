@@ -1,0 +1,9 @@
+docker–version
+docker pull rocker/verse
+docker images
+docker login–username=tumhara username 
+---to tag image 
+>docker tag  7291950d643e anjali22001/repos1:firsttry
+--to push image to docker hub account 
+>docker push anjali22001/repos1:firsttry
+

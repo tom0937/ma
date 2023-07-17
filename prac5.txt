@@ -1,0 +1,24 @@
+>docker pull nginx
+>docker run -it --name=webApp -d -p 80:80 nginx
+>click on open port enter 80
+>display nginx website
+>docker exec -it webApp bash
+>cd /usr/share/nginx/html  echo"HelloKB">index.html
+>Exit Docker ps
+>docker stop webApp
+>docker run -it --name=webApp1 -d -p 80:80 nginx
+---for adding volume---
+>docker volume create MyVolume
+>docker volume ls
+>docker volume inspect MyVolume 
+>dockerrun-d--name=webApp99–mountsource=MyVolume,destination=/usr/share/nginx/html-p81:80nginx
+> ls / 
+>cd /var/lib/docker
+>cd volumes
+>ls
+>cd Myvolume
+>ls
+>cd _data
+>ls
+>echo “from My Volume hello KB”> index.html 
+>open port 80  
